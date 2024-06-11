@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Internet Shop</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/choices.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/multiservice.svg" >
+    <link rel="stylesheet" href="fonts/SFUIText-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/SFUIText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/SFUIText-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="javascript/choices.min.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <img src="image/multiservice.svg" alt="MultiserviceLogo" class="header__logo">
+
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#">Оформить заказ</a></li>
+                        <li class="navigation__item"><a href="#">Доставка</a></li>
+                        <li class="navigation__item"><a href="#">Сайт ООО "Мульти-Сервис"</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__section offer">
+            <div class="container">
+                <div class="offer__container">
+                    <h1 class="offer__main-title">iPhone</h1>
+
+                    <h2 class="offer__title">Ближе, чем можно представить.</h2>
+
+                    <p class="offer__price">от 79 000 руб.</p>
+
+                    <button class="offer__btn btn">Оформить заказ </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__section features">
+            <div class="container">
+                <h2 class="features__title">iPhone. Ничего лишнего</h2>
+
+                <ul class="features__list">
+                    <li class="features__item card">
+                        <img src="image/camera.jpg" alt="new camera module" class="card__picture">
+                        <h3 class="card__title">Камера</h3>
+                        <p class="card__description">Система камер PRO.</p>
+                    </li>
+
+                    <li class="features__item card">
+                        <img src="image/compect.jpg" alt="equipment" class="card__picture">
+                        <h3 class="card__title">Комплектация</h3>
+                        <p class="card__description">Зарядное устройство. Беспроводные наушники.
+                        </p>
+                    </li>
+
+                    <li class="features__item card">
+                        <img src="image/color.jpg" alt="phone color" class="card__picture">
+                        <h3 class="card__title">Цвет</h3>
+                        <p class="card__description">Глубоководный синий. Графитовый.</p>
+                    </li>
+
+                    <li class="features__item card">
+                        <img src="image/frame.jpg" alt="frame" class="card__picture">
+                        <h3 class="card__title">Корпус</h3>
+                        <p class="card__description">Водонипроницаемый и противоударный корпус.</p>
+                    </li>
+
+                    <li class="features__item card">
+                        <img src="image/line.jpg" alt="line" class="card__picture">
+                        <h3 class="card__title">Линейка</h3>
+                        <p class="card__description">iPhone </p>
+                    </li>
+
+                    <li class="features__item card">
+                        <img src="image/charger_magnetic.jpg" alt="charger_magnetic" class="card__picture">
+                        <h3 class="card__title">Зарядка</h3>
+                        <p class="card__description">Аккумулятор-магнит.</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="main__section order">
+            <div class="container">
+                <h2 class="order__title">Оформить заказ</h2>
+
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="order__form form" id="form-order">
+                    <fieldset class="form__box">
+                        <legend class="form__title-box">Персональные данные</legend>
+
+                        <label for="fullName" class="form__label">ФИО<sup>*</sup></label>
+                        <input type="text" class="form__input" id="fullName" name="fullName" required>
+
+                        <label for="phone" class="form__label">Телефон<sup>*</sup></label>
+                        <input type="text" class="form__input" id="phone" name="phone" required>
+
+                        <label for="email" class="form__label">E-mail<sup>*</sup></label>
+                        <input type="email" class="form__input" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset class="form__box">
+                        <legend class="form__title-box">Адрес доставки</legend>
+
+                        <label for="city" class="form__label">Город<sup>*</sup></label>
+                        <input type="text" class="form__input" id="city" name="city" required>
+
+                        <label for="index" class="form__label">Индекс<sup>*</sup></label>
+                        <input type="text" class="form__input" id="index" name="index" required>
+
+                        <label for="address" class="form__label">Адрес<sup>*</sup></label>
+                        <input type="text" class="form__input" id="address" name="address" required>
+                    </fieldset>
+
+
+                    <fieldset class="form__box">
+                        <legend class="form__title-box">Выбор модели</legend>
+
+                        <label for="model" class="form__label">Модель</label>
+                        <select name="model" id="model" class="form___select">
+                            <option value="iPhone13">iPhone 13</option>
+                            <option value="iPhone13mini">iPhone 13 mini</option>
+                            <option value="iPhone13Pro">iPhone 13 Pro</option>
+                            <option value="iPhone13ProMax">13 Pro Max</option>
+                            <option value="iPhone14">iPhone 14</option>
+                            <option value="iPhone14Plus">iPhone 14 Plus</option>
+                            <option value="iPhone14Pro">iPhone 14 Pro</option>
+                            <option value="iPhone14ProMax">iPhone 14 Pro Max</option>
+                            <option value="iPhone15">iPhone 15</option>
+                            <option value="iPhone15Plus">iPhone 15 Plus</option>
+                            <option value="iPhone15Pro">iPhone 15 Pro</option>
+                            <option value="iPhone15ProMax">iPhone 15 Pro Max</option>
+                        </select>
+
+                        <label for="color" class="form__label">Цвет</label>
+                        <select name="color" id="color" class="form___select">
+                            <option value="Pearl">Pearl</option>
+                            <option value="Graphite">Graphite</option>
+                            <option value="SunsetGold">Sunset Gold</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Space Black">Space Black</option>
+                            <option value="Silver;">Silver</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Deep Purple">Deep Purple</option>
+                        </select>
+                    </fieldset>
+                    
+
+                    <fieldset class="form__box">
+                        <legend class="form__title-box">Аксессуары</legend>
+
+                        <label for="" class="form__label checkbox">
+                            <input class="checkbox__input" type="checkbox" name="accessories" value="case">Чехол
+                        </label>
+
+                        <label for="" class="form__label checkbox">
+                            <input class="checkbox__input" type="checkbox" name="headphones" value="headphones">Наушники AirPods 3 
+                        </label>
+
+                        <label for="" class="form__label checkbox">
+                            <input class="checkbox__input" type="checkbox" name="glass" value="glass">Защитное стекло
+                        </label>
+
+                        <label for="" class="form__label checkbox">
+                            <input class="checkbox__input" type="checkbox" name="MagSafe" value="MagSafe">Зарядное устройство MagSafe
+                        </label>
+                    </fieldset>
+                </form>
+
+                <button type="submit" class="form__submit btn" form="form-order">Оформить</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__flex">
+            <p>
+                <small class="footer__copyright">Copyright © 2024, ООО "Мульти-Сервис"</small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
